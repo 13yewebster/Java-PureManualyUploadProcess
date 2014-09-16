@@ -772,16 +772,16 @@ information in the standard deployment descriptor.
 Tools are not allowed to add the non-standard information into the
 standard deployment descriptor.
 -->
-<web:web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <web:servlet>
-    <web:servlet-name>UploaderSimpler</web:servlet-name>
-    <web:servlet-class>com.bye.project.UploadServlet</web:servlet-class>
-  </web:servlet>
-  <web:servlet-mapping>
-    <web:servlet-name>UploaderSimpler</web:servlet-name>
-    <web:url-pattern>/UploadServlet</web:url-pattern>
-  </web:servlet-mapping>
-  <web:welcome-file-list>
-    <web:welcome-file>uploadForm.html</web:welcome-file>
-  </web:welcome-file-list>
-</web:web-app>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <servlet-name>UploaderSimpler</servlet-name>
+    <servlet-class>com.bye.project.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploaderSimpler</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>uploadForm.html</welcome-file>
+  </welcome-file-list>
+</web-app>
